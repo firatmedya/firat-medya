@@ -1,1 +1,85 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Fırat Medya - Takipçi, beğeni ve izlenme hizmetleri">
+<title>Fırat Medya</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#050914;color:#fff;font-family:Arial,Helvetica,sans-serif}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 80% 12%,#4a176e55,transparent 30%),radial-gradient(circle at 15% 35%,#162b5555,transparent 28%),#050914}
+.container{width:min(1200px,92%);margin:auto}
+nav{height:72px;border-bottom:1px solid #20283a;background:#060914ee;backdrop-filter:blur(14px);position:sticky;top:0;z-index:10}
+.nav{height:100%;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:22px;letter-spacing:2px}.mark{width:39px;height:39px;border-radius:11px;background:linear-gradient(135deg,#8b3dff,#ef3caa);display:grid;place-items:center;font-size:22px;box-shadow:0 0 25px #9b3dff55}.brand small{display:block;font-size:9px;letter-spacing:4px;color:#b7bdce}
+.menu{display:flex;gap:28px;color:#c8ccda;font-size:14px}.menu a{text-decoration:none;color:inherit}.menu a:first-child{color:#d991ff;border-bottom:2px solid #a83cff;padding-bottom:21px}
+.topwa{background:linear-gradient(135deg,#8d3cff,#c832dd);padding:13px 18px;border-radius:12px;font-weight:800;text-decoration:none;color:white;font-size:13px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center;padding:62px 0 28px}
+.badge{display:inline-block;padding:8px 14px;border-radius:30px;background:#7837c522;border:1px solid #9d55ff66;color:#dfc8ff;font-size:13px;font-weight:700}
+h1{font-size:clamp(43px,5.5vw,68px);line-height:1.02;margin:18px 0;background:linear-gradient(90deg,#fff 35%,#ff6bb9 78%);-webkit-background-clip:text;color:transparent}
+.hero p{color:#aeb5c6;font-size:17px;line-height:1.55;max-width:560px}
+.hero-icons{display:flex;gap:26px;margin:25px 0;color:#d7dbea;font-size:14px}.hero-icons span:first-letter{color:#a03cff}
+.wa{display:inline-flex;align-items:center;gap:10px;background:#19c86d;color:white;text-decoration:none;padding:16px 24px;border-radius:12px;font-weight:900;box-shadow:0 12px 30px #19c86d2c}
+.visual{height:410px;position:relative;display:grid;place-items:center}
+.phone{width:205px;height:380px;border:7px solid #252b3a;border-radius:38px;transform:rotate(5deg);background:linear-gradient(160deg,#28134c,#0b1120 65%);box-shadow:0 0 70px #b038ff55;padding:18px;position:relative}
+.phone:before{content:"";position:absolute;top:9px;left:50%;transform:translateX(-50%);width:75px;height:18px;background:#05060b;border-radius:20px}
+.insta{margin-top:65px;text-align:center;font-size:65px}.line{height:10px;background:#30374a;border-radius:20px;margin:15px 5px}
+.float{position:absolute;background:#171d30;border:1px solid #38415a;border-radius:14px;padding:13px 18px;font-weight:800;box-shadow:0 16px 35px #0009}.f1{left:4%;top:25%;color:#ca9aff}.f2{right:0;top:42%;color:#ff75b8}.f3{left:14%;bottom:10%;color:#55b8ff}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:0}.card{border:1px solid #263149;border-radius:18px;padding:20px;background:linear-gradient(145deg,#0d1423,#090e1a)}
+.card h2{margin:0 0 4px;font-size:21px}.sub{color:#9ea6b8;font-size:13px;margin:0 0 14px}.ico{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;font-size:21px;margin-bottom:12px}.purple{background:#8b3dff24;color:#bd8bff}.pink{background:#f23c9124;color:#ff6cae}.blue{background:#2f9cff24;color:#55b6ff}
+.row{display:flex;justify-content:space-between;padding:11px 0;border-top:1px solid #222b3e;font-size:14px}.row b{font-weight:700}
+.highlights{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin:20px 0 15px;padding:0 12px}.hi{display:flex;gap:12px;align-items:center}.hi-icon{width:45px;height:45px;border-radius:50%;background:#11182a;display:grid;place-items:center;color:#a94cff;font-size:22px}.hi strong{display:block;font-size:15px}.hi span{color:#9ca5b7;font-size:12px}
+.contact{margin:20px 0 45px;margin-left:auto;width:49%;border:1px solid #273149;border-radius:18px;padding:17px 24px;background:#0b1220}.contact h3{margin:0 0 3px}.contact p{margin:0 0 12px;color:#a8afbf;font-size:13px}.contact .wa{width:100%;justify-content:center;padding:13px}
+footer{border-top:1px solid #20283a;padding:25px 0;color:#7e879a;text-align:center;font-size:12px}
+@media(max-width:850px){.menu{display:none}.hero{grid-template-columns:1fr;padding-top:42px}.visual{height:340px}.cards{grid-template-columns:1fr}.highlights{grid-template-columns:1fr 1fr}.contact{width:100%}}
+@media(max-width:500px){.topwa{padding:10px;font-size:11px}.hero-icons{flex-wrap:wrap}.highlights{grid-template-columns:1fr}.visual{height:300px}.phone{width:170px;height:310px}.insta{font-size:50px}}
+</style>
+</head>
+<body>
+<nav><div class="container nav">
+<a class="brand" href="#"><span class="mark">F</span><span>FIRAT<small>MEDYA</small></span></a>
+<div class="menu"><a href="#anasayfa">Ana Sayfa</a><a href="#hizmetler">Hizmetler</a><a href="#fiyatlar">Fiyatlar</a><a href="#hakkimizda">Hakkımızda</a><a href="#sss">SSS</a><a href="#iletisim">İletişim</a></div>
+<a class="topwa" href="https://wa.me/905061318640" target="_blank">◉ WhatsApp ile Sipariş Ver</a>
+</div></nav>
 
+<main id="anasayfa">
+<section class="container hero">
+<div>
+<span class="badge">◉ Sosyal Medyada Gücünü Artır</span>
+<h1>Fırat Medya ile<br>Daha Fazla Etkileşim,<br>Daha Güçlü Hesaplar.</h1>
+<p>Instagram’da takipçi, beğeni ve izlenme hizmetleri ile sosyal medya hesaplarınızı büyütün. Güvenli, hızlı ve uygun fiyatlarla yanınızdayız.</p>
+<div class="hero-icons"><span>⚡ Hızlı Teslimat</span><span>⬟ Güvenli İşlem</span><span>◉ 7/24 Destek</span></div>
+<a class="wa" href="https://wa.me/905061318640" target="_blank">◉ WhatsApp ile Hemen Sipariş Ver　→</a>
+</div>
+<div class="visual"><div class="phone"><div class="insta">◎</div><div class="line"></div><div class="line"></div><div class="line"></div></div><div class="float f1">👤 +1K</div><div class="float f2">▶ +100K</div><div class="float f3">♥ +100K</div></div>
+</section>
+
+<section class="container" id="fiyatlar">
+<div class="cards">
+<div class="card"><div class="ico purple">👤</div><h2>Takipçi Satın Al</h2><p class="sub">Hesabınızı büyütün, daha fazla kişiye ulaşın.</p>
+<div class="row"><span>1.000 Takipçi</span><b>500 TL</b></div><div class="row"><span>2.000 Takipçi</span><b>800 TL</b></div><div class="row"><span>5.000 Takipçi</span><b>2.000 TL</b></div><div class="row"><span>10.000 Takipçi</span><b>3.500 TL</b></div><div class="row"><span>20.000 Takipçi</span><b>6.000 TL</b></div><div class="row"><span>50.000 Takipçi</span><b>12.000 TL</b></div><div class="row"><span>100.000 Takipçi</span><b>20.000 TL</b></div>
+</div>
+<div class="card"><div class="ico pink">♥</div><h2>Beğeni Satın Al</h2><p class="sub">Paylaşımlarınıza daha fazla etkileşim kazandırın.</p>
+<div class="row"><span>500 Beğeni</span><b>50 TL</b></div><div class="row"><span>1.000 Beğeni</span><b>70 TL</b></div><div class="row"><span>3.000 Beğeni</span><b>150 TL</b></div><div class="row"><span>5.000 Beğeni</span><b>300 TL</b></div><div class="row"><span>10.000 Beğeni</span><b>500 TL</b></div><div class="row"><span>20.000 Beğeni</span><b>700 TL</b></div><div class="row"><span>50.000 Beğeni</span><b>1.500 TL</b></div><div class="row"><span>100.000 Beğeni</span><b>2.000 TL</b></div>
+</div>
+<div class="card"><div class="ico blue">▶</div><h2>İzlenme Satın Al</h2><p class="sub">Videolarınızın daha fazla kişiye ulaşmasını sağlayın.</p>
+<div class="row"><span>5.000 İzlenme</span><b>50 TL</b></div><div class="row"><span>10.000 İzlenme</span><b>80 TL</b></div><div class="row"><span>20.000 İzlenme</span><b>150 TL</b></div><div class="row"><span>50.000 İzlenme</span><b>300 TL</b></div><div class="row"><span>100.000 İzlenme</span><b>500 TL</b></div><div class="row"><span>500.000 İzlenme</span><b>1.500 TL</b></div><div class="row"><span>1 Milyon İzlenme</span><b>2.000 TL</b></div><div class="row"><span>5 Milyon İzlenme</span><b>3.500 TL</b></div><div class="row"><span>10 Milyon İzlenme</span><b>5.000 TL</b></div>
+</div>
+</div>
+</section>
+
+<section class="container highlights" id="hizmetler">
+<div class="hi"><div class="hi-icon">⚡</div><div><strong>Hızlı Teslimat</strong><span>Siparişleriniz en kısa sürede hesabınıza ulaşır.</span></div></div>
+<div class="hi"><div class="hi-icon">⬟</div><div><strong>Güvenli ve Gizli</strong><span>Hesap bilgileriniz güvende.</span></div></div>
+<div class="hi"><div class="hi-icon">◉</div><div><strong>7/24 Destek</strong><span>Her zaman yanınızdayız.</span></div></div>
+<div class="hi"><div class="hi-icon">★</div><div><strong>Uygun Fiyat</strong><span>Kaliteli hizmet, en iyi fiyatlarla.</span></div></div>
+</section>
+
+<section class="container contact" id="iletisim">
+<h3>WhatsApp ile İletişim</h3><p>Sipariş vermek veya detaylı bilgi almak için bizimle WhatsApp üzerinden iletişime geçebilirsiniz.</p>
+<a class="wa" href="https://wa.me/905061318640" target="_blank">◉　0506 131 86 40　→</a>
+</section>
+</main>
+<footer>© 2026 Fırat Medya — Sosyal medya hizmetleri</footer>
+</body>
+</html>
